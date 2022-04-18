@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/pradhuman1/EvidenceManagement_DAPP/issues"
   },
-  "homepage": "https://github.com/pradhuman1/EvidenceManagement_DAPP#readme"
+  "homepage": "https://github.com/pradhuman1/EvidenceManagement_DAPP#readme",
+  "dependencies": {
+    "solc": "^0.8.13",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.7.3"
+  }
 }
