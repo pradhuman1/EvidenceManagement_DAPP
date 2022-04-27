@@ -61,5 +61,15 @@ contract evidence{
     function createStation(string memory name,string memory location) public restricted{
         stations.push(station(name,location));
     }
-
+    function getAllStations() public view returns(station[] memory){
+        return stations;
+    }
+    Fir[] firs_array;
+    function getAllFirs() public returns(Fir[] memory){
+        delete firs_array;
+        for(uint256 i=0;i<numFir;i++){
+            firs_array.push(Fir(Firs[i].Title,Firs[i].Description,Firs[i].time,Firs[i].creator,Firs[i].evidences_arr));
+        }
+        return firs_array;
+    }
 }
